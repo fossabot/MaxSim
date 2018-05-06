@@ -42,7 +42,7 @@ message MaxSimConfig {
 
   // Type of pointer tagging active in MaxSim.
   //
-  optional PointerTaggingType pointerTaggingType = 2 [default = NO_TAGGING];
+  optional PointerTaggingType pointerTaggingType = 2 [default = CLASS_ID_TAGGING];
 
   // Scaling factor for primitives in Maxine VM and contraction factor in ZSim used in address space morphing.
   //

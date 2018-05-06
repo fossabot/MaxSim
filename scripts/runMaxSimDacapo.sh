@@ -61,11 +61,11 @@ executeExitOnFail ./scripts/buildMaxSimProduct.sh
 
 executeExitOnFail pushd ./graal/lib
 if [ ! -f ./$BENCHMARK_JAR ]; then
-    executeExitOnFail wget "http://downloads.sourceforge.net/project/dacapobench/9.12-bach/$BENCHMARK_JAR"
+executeExitOnFail wget --no-check-certificate "https://sourceforge.net/projects/dacapobench/files/archive/9.12-bach/dacapo-9.12-bach.jar"
 fi
 CP_JAR_FLAGS=" -cp ../misc/DaCapoCallbacks:../graal/lib/$BENCHMARK_JAR Harness -c MaxSimCallback"
 executeExitOnFail popd
-
+#Harness
 executeExitOnFail pushd ./maxine
 
 TESTS_NUM=${#TESTS[@]}

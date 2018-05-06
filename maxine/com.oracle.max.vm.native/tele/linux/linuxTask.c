@@ -156,7 +156,7 @@ void log_task_stat(pid_t tgid, pid_t tid, const char* messageFormat, ...) {
 
 #define STAT_STRING_FIELD(name) do { \
     char *name; \
-    fscanf(sp, "%as ", &name); \
+    fscanf(sp, "%s ", name); \
         log_println("  %20s: %s", STRINGIZE(name), name); \
 } while (0)
 

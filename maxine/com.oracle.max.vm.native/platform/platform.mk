@@ -177,7 +177,7 @@ ifeq ($(OS),darwin)
     endif
     ifneq "$(findstring def, $(origin CFLAGS))" ""
         # origin of CFLAGS is either undefined or default, so set it here
-        CFLAGS = -g $(DARWIN_GCC_MFLAG) -Wall -Wextra -Werror -Wno-main -Wno-deprecated-declarations -Wno-unused-parameter -fPIC -DDARWIN -D$(ISA) -D$(TARGET) -D$(TARGET_WORD_SIZE) $(JDK7)
+        CFLAGS = -g $(DARWIN_GCC_MFLAG) -Wall -Wextra -Wno-main -Wno-deprecated-declarations -Wno-unused-parameter -fPIC -DDARWIN -D$(ISA) -D$(TARGET) -D$(TARGET_WORD_SIZE) $(JDK7)
     endif
     C_DEPENDENCIES_FLAGS = -M -DDARWIN -D$(ISA) -D$(TARGET) -D$(TARGET_WORD_SIZE)
     LINK_MAIN = $(CC) -g $(DARWIN_GCC_MFLAG) -lc -lm -ldl -framework CoreFoundation -o $(MAIN)
@@ -207,7 +207,7 @@ ifeq ($(OS),linux)
     endif
     ifneq "$(findstring def, $(origin CFLAGS))" ""
         # origin of CFLAGS is either undefined or default, so set it here
-        CFLAGS = -g -Wall -Wno-long-long -Werror -Wextra -Wno-main -Wno-unused-parameter -fPIC -D_GNU_SOURCE -D$(ISA) -DLINUX -D$(TARGET) -D$(TARGET_WORD_SIZE) $(JDK7)
+        CFLAGS = -g -Wall -Wno-long-long -Wextra -Wno-main -Wno-unused-parameter -fPIC -D_GNU_SOURCE -D$(ISA) -DLINUX -D$(TARGET) -D$(TARGET_WORD_SIZE) $(JDK7)
     endif
     C_DEPENDENCIES_FLAGS = -M -DLINUX -D$(ISA) -D$(TARGET) -D$(TARGET_WORD_SIZE)
     # The '-rpath' linker option is used so that LD_LIBRARY_PATH does not have to be configured at runtime to
