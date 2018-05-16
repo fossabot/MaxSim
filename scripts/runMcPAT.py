@@ -319,7 +319,7 @@ def mcpat_bin():
     suffix = '.cache'
   else:
     suffix = ''
-  bin = os.path.join(mcpatdir, 'mcpat-1.0%s' % suffix)
+  bin = os.environ['MCBIN']
   if os.path.exists(bin):
     # Fancy McPAT versions haven't been downloaded yet, use the plain old one
     return bin
@@ -357,7 +357,6 @@ def get_all_names():
 
 def main(zsim_stat_dir, maxine_op_modes, jobid, resultsdir, outputfile, powertype = 'dynamic', config = None, no_graph = False, partial = None, print_stack = True, return_data = False):
   tempfile = outputfile + '.xml'
-
   results = convertZSimToSniperResultsLib.convert(zsim_stat_dir, maxine_op_modes)
 
   if PRINT_ZSIM_RESULTS:

@@ -23,7 +23,7 @@ import MaxSimInterface_pb
 import retrieveZSimStatLib
 
 def convert(zsim_stat_dir, maxine_op_modes):
-  jf = open(os.path.join(zsim_stat_dir, './out.cfg'))
+  jf = open(os.path.join(zsim_stat_dir, 'out.cfg'))
   js = retrieveZSimStatLib.convert_config_to_json(jf.read()) 
   a = json.loads(js)
 
