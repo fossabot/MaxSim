@@ -1,10 +1,9 @@
-### University of Crete
-### Department of Computer Science
-### CS-446: Managed Runtime Systems 
-### (as part of the project)
-### Authors: 	Ioannis Vardas (vardas@csd.uoc.gr)
-### 		Antonios Psistakis (psistakis@csd.uoc.gr)
-### Date:         May 16th, 2018
+#### University of Crete
+#### Department of Computer Science
+#### CS-446: Managed Runtime Systems 
+#### (as part of the project)
+#### Authors: Ioannis Vardas (vardas@csd.uoc.gr), Antonios Psistakis (psistakis@csd.uoc.gr)
+#### Date: May 16th, 2018
 
 
 
