@@ -44,13 +44,20 @@ sudo ln -s libhdf5_serial_hl.so.10.0.2 libhdf5_hl.so
 variable MCBIN (see below).
 
 ### set the environment variables:
-export PATH=$PATH:/home/cs446/jdk1.7.0_25/bin
-export JAVA_HOME=/home/cs446/jdk1.7.0_25
-export PROTOBUFPATH=/home/cs446/protobuf
-export PINPATH=/home/cs446/pin-2.14-71313-gcc.4.4.7-linux
-export LIBCONFIGPATH=/usr/lib/x86_64-linux-gnu
-export MCPATPATH=/home/cs446/mcpat
-export MCBIN=/home/cs446/mcpat/mcpat
+export PATH=$PATH:/home/cs446/jdk1.7.0_25/bin  
+
+export JAVA_HOME=/home/cs446/jdk1.7.0_25  
+
+export PROTOBUFPATH=/home/cs446/protobuf  
+
+export PINPATH=/home/cs446/pin-2.14-71313-gcc.4.4.7-linux  
+
+export LIBCONFIGPATH=/usr/lib/x86_64-linux-gnu  
+
+export MCPATPATH=/home/cs446/mcpat  
+
+export MCBIN=/home/cs446/mcpat/mcpat  
+
 
 11. After setting the variables the installation can be completed by running ./scripts/buildZsimProduct.sh and ./scripts/buildMaxSimProduct.sh.
 
