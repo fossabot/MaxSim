@@ -197,6 +197,8 @@ Recipes
 Profiles simple `./maxine/com.oracle.max.tests/src/test/output/HelloWorld.java` application using `4C` ZSim configuration (the configuration description is in the paper):
 ```shell
 # Changes pointerTaggingType default type to CLASS_ID_TAGGING
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpsistakis%2FMaxSim.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpsistakis%2FMaxSim?ref=badge_shield)
+
 sed -i 's/pointerTaggingType = 2 \[default = NO_TAGGING/pointerTaggingType = 2 \[default = CLASS_ID_TAGGING/' ./maxine/com.oracle.max.vm/src/com/sun/max/vm/maxsim/MaxSimInterface.proto
 
 # Builds MaxSim
@@ -272,3 +274,7 @@ popd
 sed -i 's/pointerTaggingType = 2 \[default = CLASS_ID_TAGGING/pointerTaggingType = 2 \[default = NO_TAGGING/' ./maxine/com.oracle.max.vm/src/com/sun/max/vm/maxsim/MaxSimInterface.proto
 sed -i 's/layoutScaleFactor = 3 \[default = 2/layoutScaleFactor = 3 \[default = 1/' maxine/com.oracle.max.vm/src/com/sun/max/vm/maxsim/MaxSimInterface.proto
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpsistakis%2FMaxSim.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpsistakis%2FMaxSim?ref=badge_large)
